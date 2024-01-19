@@ -28,21 +28,14 @@ function Header() {
       </Navbar.Brand>
 
       <div className="flex items-center space-x-4">
-        <Link to="/" className="text-2xl font-bold text-red-500 hover:text-red-600" style={linkStyle}>
-          Puedeees Cok
-        </Link>
+        
         <Link to="/" className="header-link" style={linkStyle}>
           Home
         </Link>
         <Link to="/order-history" className="header-link" style={linkStyle}>
           Order History
         </Link>
-        <Link to="/contact-us" className="header-link" style={linkStyle}>
-          Contact Us
-        </Link>
-        <Link to="/menu" className="header-link" style={linkStyle}>
-          Menu
-        </Link>
+
       </div>
     </Navbar>
   );
