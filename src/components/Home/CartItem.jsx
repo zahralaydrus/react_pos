@@ -1,6 +1,7 @@
 // CartItem.jsx
 function CartItem({ name, price, image, notes }) {
     return (
+ 
       <li style={{ listStyle: "none", display: "flex", width: "150px", padding: "10px" }}>
         <div style={{ width: "50px", height: "50px", marginRight: "10px", overflow: "hidden" }}>
           <img

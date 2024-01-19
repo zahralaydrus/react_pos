@@ -5,8 +5,8 @@ import React from "react";
 function MenuItem({ name, price, image }) {
     return (
         <div style={{
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
+            backgroundColor: "#C8F2EF",
+            border: "1px solid #C8F2EF",
             borderRadius: "5px",
             padding: "10px",
             textAlign: "center",

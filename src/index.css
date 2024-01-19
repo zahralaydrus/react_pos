@@ -20,11 +20,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #e70000;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #882222;
 }
 
 body {
@@ -43,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -58,14 +58,18 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #f7ff89;
+    background: url('https://media.istockphoto.com/id/931936960/id/vektor/%C3%B0%C3%B0%C3%B1%C3%B0%C3%B01-2%C3%B1%C3%B0%CE%BC%C3%B01-2%C3%B0%CE%BC%C3%B1%C3%B0.jpg?s=612x612&w=0&k=20&c=fZjK6RgyUpeqyfa4ItmWmkkpi84QPqzu4pIE7qKil20=')center/contain no-repeat;
+    /* height: 100vh; */
+    background-size: contain;
+    background-position: center;
   }
   a:hover {
     color: #94f5d0;
   }
   button {
-    background-color: #51eb91;
+    background-color: rgb(255, 59, 59);
   }
+  
 }
 
 /* sidebar styling */

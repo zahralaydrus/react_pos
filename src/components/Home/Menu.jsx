@@ -142,10 +142,10 @@ function Menu({ dispatch }) {
           value={searchTerm}
           onChange={handleSearch}
           className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          style={{ width: '200px', marginBottom:'30px', marginLeft:'30px', flexDirection:'' }}
+          style={{ width: '890px', marginBottom:'20px', marginLeft:'30px', flexDirection:'' }}
         />
       </div>
-      <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginLeft:"30px" }}>
+      <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginLeft:"50px" }}>
         {searchResults.map((pizza) => (
           <div
             className="p-[10px] mb-[20px] rounded-lg h-[300px] shadow-lg"

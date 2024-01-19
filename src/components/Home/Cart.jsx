@@ -117,20 +117,36 @@ function Cart({ carts, dispatch }) {
           
           <Card className="max-w-sm"
             imgAlt="Meaningful alt text for an image that is not purely decorative" key={cart.id}>
-
+               <div className="flex items-center space-x-2">
             <CartItem
-
+              
               name={cart.name}
               image={cart.image}
               price={cart.totalPrice}
               notes={cart.notes}
 
             />
-
-            <button disabled={cart.quantity <= 1} onClick={() => handleDecreaseQuantity(cart)}>-</button>
+           
+            <button 
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
+            disabled={cart.quantity <= 1} 
+            onClick={() => handleDecreaseQuantity(cart)}
+            style={{ marginRight: "5px" }}
+            
+            >-
+            </button>
             <span>{cart.quantity}</span>
-            <button onClick={() => handleIncreaseQuantity(cart)}>+</button>
-            <button onClick={() => handleDeleteItem(cart.id)}>Delete</button>
+            <button 
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
+            onClick={() => handleIncreaseQuantity(cart)}
+            style={{ marginRight: "5px", marginLeft: "15px" }}
+            >+</button>
+            <button 
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
+            onClick={() => handleDeleteItem(cart.id)}
+            style={{ marginLeft: "20px" }}
+            >Delete</button>
+            </div>
           </Card>
         ))}
       </ul>
