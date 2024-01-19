@@ -131,7 +131,7 @@ function Cart({ carts, dispatch }) {
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
             disabled={cart.quantity <= 1} 
             onClick={() => handleDecreaseQuantity(cart)}
-            style={{ marginRight: "5px" }}
+            style={{ marginRight: "5px", backgroundColor: "green" }}
             
             >-
             </button>
@@ -139,7 +139,7 @@ function Cart({ carts, dispatch }) {
             <button 
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
             onClick={() => handleIncreaseQuantity(cart)}
-            style={{ marginRight: "5px", marginLeft: "15px" }}
+            style={{ marginRight: "5px", marginLeft: "15px", backgroundColor: "green" }}
             >+</button>
             <button 
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded" 
@@ -188,7 +188,9 @@ function Cart({ carts, dispatch }) {
       <p>Pesanan Berhasil Disimpan - Order Number: {orderNumber}</p>
     </Modal.Body>
     <Modal.Footer>
-      <Button color="success" onClick={() => {
+      <Button 
+      style={{ backgroundColor: "red" }}
+      color="success" onClick={() => {
         setShowOrderSuccessModal(false);
         setOrderNumber(''); // Reset orderNumber to empty string when closing the modal
       }}>Close</Button>
